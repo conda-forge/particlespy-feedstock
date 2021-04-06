@@ -10,7 +10,7 @@ source:
   sha256: 1e12833ac5b4e0e519a9c4b2c87f54a60ad2cab49587a8295e4a6a596b61836f
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -29,6 +29,11 @@ requirements:
 test:
   imports:
     - ParticleSpy
+
+outputs:
+  - name: ParticleSpy
+    files:
+      - Parameters
 
 about:
   home: https://github.com/ePSIC-DLS/ParticleSpy
