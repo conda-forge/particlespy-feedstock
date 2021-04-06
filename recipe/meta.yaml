@@ -31,7 +31,7 @@ test:
     - ParticleSpy
 
 outputs:
-  - name: ParticleSpy
+  - name: particlespy
     files:
       - Parameters
 
